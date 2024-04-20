@@ -19,11 +19,12 @@ const App = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
-            <BrowserRouter>
+            <Layout />
+            {/* <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />} />
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
         </ThemeProvider>
     )
 }
