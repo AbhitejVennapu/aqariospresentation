@@ -5,6 +5,7 @@ import { Stack } from "@mui/material"
 import ProblemStatement from "./ProblemStatement"
 // import Features from "./Features"
 import FeaturesTabs from "./FeaturesTabs"
+import QaAndManagement from "./QaAndManagement"
 
 const Layout = () => {
     return (
@@ -16,6 +17,7 @@ const Layout = () => {
                 <ProblemStatement />
                 {/* <Features /> */}
                 <FeaturesTabs />
+                <QaAndManagement />
             </Stack>
 
         </Box>
