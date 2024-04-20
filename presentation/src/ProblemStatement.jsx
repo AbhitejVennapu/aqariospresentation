@@ -5,7 +5,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 const ProblemStatement = () => {
     return (
         <Box id="ProblemStatement"
-            sx={{ height: '100vh', width: '100% ', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8rem' }}>
+            sx={{ height: '100vh', width: '100% ', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8rem', position: 'relative' }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
 

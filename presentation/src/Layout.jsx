@@ -3,7 +3,8 @@ import Box from "@mui/material/Box"
 import Title from "./Title"
 import { Stack } from "@mui/material"
 import ProblemStatement from "./ProblemStatement"
-import Features from "./Features"
+// import Features from "./Features"
+import FeaturesTabs from "./FeaturesTabs"
 
 const Layout = () => {
     return (
@@ -13,7 +14,8 @@ const Layout = () => {
             <Stack spacing={0}>
                 <Title />
                 <ProblemStatement />
-                <Features />
+                {/* <Features /> */}
+                <FeaturesTabs />
             </Stack>
 
         </Box>

@@ -11,7 +11,7 @@ const FeaturesContent = () => {
                 background: 'linear-gradient(0deg, #0f172a80, #0f172a80), linear-gradient(180deg, #33415580, #02042080 33.92%)',
                 borderRadius: '15px',
                 height: '70vh',
-                overflow: 'hidden',
+                //overflow: 'hidden',
             }}
         //onWheel={() => document.getElementById("comment").scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })}
         >

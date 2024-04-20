@@ -1,8 +1,24 @@
 import React from "react"
-import { Box, Typography, Stack, Button } from "@mui/material"
+// @ts-ignore
+import { Box, Typography, Stack, Button, SvgIcon, Icon } from "@mui/material"
+// @ts-ignore
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// @ts-ignore
+import ReactIcon from './assets/React.png';
+// @ts-ignore
+import MUIIcon from './assets/Material UI.png';
+// @ts-ignore
+import JestIcon from './assets/Jest.png';
+// @ts-ignore
+import GitIcon from './assets/Git.png';
+// @ts-ignore
+import ReduxIcon from './assets/Redux.png';
+// @ts-ignore
+import YJsIcon from './assets/YJs.png';
+
 const Title = () => {
+    // @ts-ignore
     var element = document.getElementById("ProjectTitle");
     return (
         <Box
@@ -40,7 +56,12 @@ const Title = () => {
                             background: "linear-gradient(90deg,#f1f5f966 4.65%,#f1f5f9 51.22%,#f1f5f966 93.04%)",
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
-                            backgroundSize: '100%'
+                            backgroundSize: '100%',
+                            '&:hover': {
+                                background: "linear-gradient(180deg,#f1f5f966 4.65%,#f1f5f9 51.22%,#f1f5f966 93.04%)",
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                            },
                         }}
                     >
                         LabBook
@@ -53,6 +74,19 @@ const Title = () => {
                     >
                         A collaborative digital learning platform developed in collaboration with BASF SE and RPTU
                     </Typography>
+                    <Box sx={{
+                        display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '1rem'
+                    }}>
+                        <Stack direction="row" spacing={2.5}>
+                            <img src={ReactIcon} height={48}></img>
+                            <img src={MUIIcon} height={48}></img>
+                            <img src={YJsIcon} height={48}></img>
+                            <img src={ReduxIcon} height={48}></img>
+                            <img src={JestIcon} height={48}></img>
+                            <img src={GitIcon} height={48}></img>
+
+                        </Stack>
+                    </Box>
                 </Stack>
             </Box>
 
