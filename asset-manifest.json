@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/aqariospresentation/static/css/main.e6c13ad2.css",
+    "main.js": "/aqariospresentation/static/js/main.d6f2fca8.js",
+    "static/media/Dashboard.png": "/aqariospresentation/static/media/Dashboard.5fb2a0c109f7cb1fc598.png",
+    "static/media/Flags.png": "/aqariospresentation/static/media/Flags.d3a95e27a320b2bca39d.png",
+    "static/media/Progress Tracker.png": "/aqariospresentation/static/media/Progress Tracker.c4299185cf80e9b75a0c.png",
+    "static/media/Comments.png": "/aqariospresentation/static/media/Comments.d62a79131d8e6502bc19.png",
+    "static/media/Material UI.png": "/aqariospresentation/static/media/Material UI.530e2f6eb2e3f49b9008.png",
+    "static/media/Git.png": "/aqariospresentation/static/media/Git.8d37adcd9121c2aba1e0.png",
+    "static/media/Redux.png": "/aqariospresentation/static/media/Redux.0bac1762f31952127f15.png",
+    "static/media/React.png": "/aqariospresentation/static/media/React.98ff38735baa4c1b0381.png",
+    "index.html": "/aqariospresentation/index.html",
+    "main.e6c13ad2.css.map": "/aqariospresentation/static/css/main.e6c13ad2.css.map",
+    "main.d6f2fca8.js.map": "/aqariospresentation/static/js/main.d6f2fca8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d6f2fca8.js"
+  ]
+}
