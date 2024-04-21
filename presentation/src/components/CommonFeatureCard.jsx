@@ -67,16 +67,21 @@ const CommonFeatureCard = ({ index }) => {
                         }}
                     >
                         <List>
-                            {featuresList[index].content?.map((entry) => (
-                                <ListItem
-                                    sx={{
-                                        fontSize: "1.25rem",
-                                        color: "rgba(148, 163, 184, 1)",
-                                    }}
-                                >
-                                    {entry}
-                                </ListItem>
-                            ))}
+                            {featuresList[index].content?.map(
+                                (entry, index) => (
+                                    <React.Fragment key={index}>
+                                        <ListItem
+                                            key={index}
+                                            sx={{
+                                                fontSize: "1.25rem",
+                                                color: "rgba(148, 163, 184, 1)",
+                                            }}
+                                        >
+                                            {entry}
+                                        </ListItem>
+                                    </React.Fragment>
+                                )
+                            )}
                         </List>
                     </Grid>
                     <Grid
