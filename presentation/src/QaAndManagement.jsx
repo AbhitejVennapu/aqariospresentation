@@ -1,9 +1,10 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
-import QaAndManagementComponent from "./components/QaAndManagementComponent";
+import { Box, Grid, Stack, Typography } from "@mui/material"
+import React from "react"
+import QaAndManagementComponent from "./components/QaAndManagementComponent"
+import SectionHeader from "./components/SectionHeader"
 
 const QaAndManagement = () => {
-    const qaManagementItemsLength = 3;
+    const qaManagementItemsLength = 3
     return (
         <React.Fragment>
             <Box
@@ -11,26 +12,14 @@ const QaAndManagement = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    paddingY: "4rem",
-                    paddingX: "8rem",
+                    // paddingY: "4rem",
+                    // paddingX: "8rem",
+                    padding: { md: "8rem", xs: "2rem" },
                 }}
             >
-                <Stack spacing={4}>
-                    <Typography
-                        sx={{
-                            fontSize: "3rem",
-                            lineHeight: "1",
-                            background:
-                                "linear-gradient(135deg,#f1f5f966 4.65%,#f1f5f9 51.22%,#f1f5f966 93.04%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                            backgroundSize: "100%",
-                            textAlign: "center",
-                            paddingBottom: "4rem",
-                        }}
-                    >
-                        Project Management & QA.
-                    </Typography>
+                <Stack spacing={0}>
+                    <SectionHeader title="Project Management & QA." />
+
                     <Box
                         sx={{
                             display: "flex",
@@ -42,7 +31,7 @@ const QaAndManagement = () => {
                             // height: '70vh',
                             //overflow: 'hidden',
                             width: "100%",
-                            padding: "4rem",
+                            padding: { md: "4rem", xs: "2rem" },
                             "&:hover": {
                                 background:
                                     "linear-gradient(90deg, #0f172a80, #0f172a80), linear-gradient(0deg, #33415580, #02042080 33.92%)",
@@ -64,7 +53,7 @@ const QaAndManagement = () => {
                 </Stack>
             </Box>
         </React.Fragment>
-    );
-};
+    )
+}
 
-export default QaAndManagement;
+export default QaAndManagement

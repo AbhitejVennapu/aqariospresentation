@@ -1,6 +1,7 @@
-import { Box, Stack, Typography } from "@mui/material"
+import { Box, Grid, Stack, Typography } from "@mui/material"
 import React from "react"
 import Chip from "@mui/material/Chip"
+import SectionHeader from "./components/SectionHeader"
 
 const ConceptsAndMethodologies = () => {
     const conceptsAndMethodologiesList = [
@@ -18,33 +19,24 @@ const ConceptsAndMethodologies = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    paddingY: "4rem",
-                    paddingX: "8rem",
+
+                    padding: { md: "8rem", xs: "2rem" },
                 }}
             >
-                <Stack spacing={4}>
-                    <Typography
-                        sx={{
-                            fontSize: "3rem",
-                            lineHeight: "1",
-                            background:
-                                "linear-gradient(135deg,#f1f5f966 4.65%,#f1f5f9 51.22%,#f1f5f966 93.04%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                            backgroundSize: "100%",
-                            textAlign: "center",
-                            paddingBottom: "4rem",
-                        }}
+                <Stack spacing={0}>
+                    <SectionHeader title="Concepts and Methodologies" />
+                    {/* <Stack
+                        direction="row"
+                        spacing={2}
+                        sx={{ flexWrap: "wrap" }}
                     >
-                        Concepts and Methodologies
-                    </Typography>
-                    <Stack direction="row" spacing={1}>
                         {conceptsAndMethodologiesList.map((concept, index) => (
                             <Chip
                                 key={index}
                                 label={concept}
                                 sx={{
                                     fontSize: "16px",
+                                    marginBottom: { xs: "1rem", md: "0rem" },
                                     "&:hover": {
                                         background:
                                             "linear-gradient(90deg, #0f172a80, #0f172a80), linear-gradient(0deg, #33415580, #02042080 33.92%)",
@@ -53,7 +45,30 @@ const ConceptsAndMethodologies = () => {
                                 }}
                             ></Chip>
                         ))}
-                    </Stack>
+                    </Stack> */}
+                    <Grid container spacing={1}>
+                        {conceptsAndMethodologiesList.map((concept, index) => (
+                            <Grid item key={index}>
+                                <Chip
+                                    key={index}
+                                    label={concept}
+                                    sx={{
+                                        fontSize: "16px",
+                                        marginBottom: {
+                                            xs: "1rem",
+                                            md: "0rem",
+                                        },
+                                        "&:hover": {
+                                            background:
+                                                "linear-gradient(90deg, #0f172a80, #0f172a80), linear-gradient(0deg, #33415580, #02042080 33.92%)",
+                                            fontSize: "16px",
+                                        },
+                                    }}
+                                ></Chip>
+                            </Grid>
+                        ))}
+                    </Grid>
+                    {/* </Box> */}
                 </Stack>
             </Box>
         </React.Fragment>

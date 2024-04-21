@@ -8,13 +8,22 @@ import CopyrightIcon from "@mui/icons-material/Copyright"
 const Footer = () => {
     return (
         <React.Fragment>
-            <Box sx={{ padding: "8rem", paddingBottom: "4rem" }}>
+            <Box
+                sx={{
+                    padding: { md: "8rem", xs: "2rem" },
+                    paddingBottom: "4rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    alignItems: "flex-start",
+                }}
+            >
                 <Stack spacing={1}>
                     <Stack direction="row" spacing={2}>
                         <a href="mailto:abhi.tej98@gmail.com" target="blank">
                             <EmailIcon
                                 sx={{
-                                    fontSize: "24px",
+                                    fontSize: { md: "24px", xs: "16px" },
                                     color: "#FFF",
                                 }}
                             ></EmailIcon>
@@ -25,7 +34,7 @@ const Footer = () => {
                         >
                             <LinkedInIcon
                                 sx={{
-                                    fontSize: "24px",
+                                    fontSize: { md: "24px", xs: "16px" },
                                     color: "#FFF",
                                 }}
                             ></LinkedInIcon>
@@ -36,7 +45,7 @@ const Footer = () => {
                         >
                             <GitHubIcon
                                 sx={{
-                                    fontSize: "24px",
+                                    fontSize: { md: "24px", xs: "16px" },
                                     color: "#FFF",
                                 }}
                             ></GitHubIcon>
@@ -45,7 +54,7 @@ const Footer = () => {
                     <Stack direction="row" spacing={1}>
                         <CopyrightIcon
                             sx={{
-                                fontSize: "16px",
+                                fontSize: { md: "16px", xs: "12px" },
                                 height: "1.5em",
                             }}
                         >
@@ -53,7 +62,7 @@ const Footer = () => {
                         </CopyrightIcon>
                         <Typography
                             sx={{
-                                fontSize: "16px",
+                                fontSize: { md: "16px", xs: "12px" },
                             }}
                         >
                             {" "}

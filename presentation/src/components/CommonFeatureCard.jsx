@@ -20,6 +20,8 @@ const CommonFeatureCard = ({ index }) => {
                 "Application supports add, edit and delete operations. ",
                 "Comments threads support replies and its corresponding add, edit and delete operations.",
             ],
+            height: "232",
+            width: "221",
         },
         {
             title: "Flags",
@@ -29,6 +31,8 @@ const CommonFeatureCard = ({ index }) => {
                 "These flags are tracked in the teacher dashboard.",
                 "Information about the flags is maintained including total number of flags created and active flags.",
             ],
+            height: "232",
+            width: "221",
         },
         {
             title: "Progress Tracker",
@@ -38,6 +42,8 @@ const CommonFeatureCard = ({ index }) => {
                 "Students can copy these components from script board to their private boards.",
                 "Based on every item student checks and unchecks, the total progress percentage is updated in real-time.",
             ],
+            height: "232",
+            width: "221",
         },
         {
             title: "Dashboard",
@@ -47,11 +53,18 @@ const CommonFeatureCard = ({ index }) => {
                 "The view consists of student tiles with UI elements to highlight the students with active flags.",
                 "Analytics consists of a visualization describing the total number of flags and active flags for each student.",
             ],
+            height: "210",
+            width: "338",
         },
     ]
     return (
         <React.Fragment>
-            <Box sx={{ height: "100%", padding: "4rem" }}>
+            <Box
+                sx={{
+                    height: { md: "100%" },
+                    padding: { md: "4rem", xs: "1.5rem" },
+                }}
+            >
                 <Typography variant="h5" sx={{ paddingBottom: "2rem" }}>
                     {featuresList[index].title}
                 </Typography>
@@ -66,15 +79,16 @@ const CommonFeatureCard = ({ index }) => {
                             alignItems: "center",
                         }}
                     >
-                        <List>
+                        <List sx={{ padding: "0rem" }}>
                             {featuresList[index].content?.map(
                                 (entry, index) => (
                                     <React.Fragment key={index}>
                                         <ListItem
                                             key={index}
                                             sx={{
-                                                fontSize: "1.25rem",
+                                                fontSize: "1rem",
                                                 color: "rgba(148, 163, 184, 1)",
+                                                paddingX: 0,
                                             }}
                                         >
                                             {entry}
@@ -97,8 +111,12 @@ const CommonFeatureCard = ({ index }) => {
                         <img
                             src={featuresList[index].imageLink}
                             alt="featureImage"
-                            height={index === 3 ? "75%" : "100%"}
-                            width="100%"
+                            height={featuresList[index].height}
+                            width={
+                                featuresList[index].width
+                                    ? featuresList[index].width
+                                    : "100%"
+                            }
                         ></img>
                     </Grid>
                 </Grid>

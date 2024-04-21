@@ -1,9 +1,8 @@
 import React from "react"
 import Box from "@mui/material/Box"
 import Title from "./Title"
-import { Stack } from "@mui/material"
-import ProblemStatement from "./ProblemStatement"
-// import Features from "./Features"
+import { Grid, Stack } from "@mui/material"
+import GettingStarted from "./GettingStarted"
 import FeaturesTabs from "./FeaturesTabs"
 import QaAndManagement from "./QaAndManagement"
 import ConceptsAndMethodologies from "./ConceptsAndMethodologies"
@@ -14,17 +13,17 @@ const Layout = () => {
         <Box
             sx={{
                 background: "linear-gradient(180deg, #0f172a, #020420)",
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
             }}
         >
-            <Stack spacing={0}>
-                <Title />
-                <ProblemStatement />
-                {/* <Features /> */}
-                <FeaturesTabs />
-                <QaAndManagement />
-                <ConceptsAndMethodologies />
-                <Footer />
-            </Stack>
+            <Title />
+            <GettingStarted />
+            <FeaturesTabs />
+            <QaAndManagement />
+            <ConceptsAndMethodologies />
+            <Footer />
         </Box>
     )
 }

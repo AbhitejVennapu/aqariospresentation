@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import { Grid } from "@mui/material"
 import CommonFeatureCard from "./components/CommonFeatureCard"
+import SectionHeader from "./components/SectionHeader"
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props
@@ -47,11 +48,6 @@ export default function FeaturesTabs() {
         setValue(newValue)
     }
 
-    const setMargin = (top) => {
-        const newMargin = top + 10 + "px"
-        return newMargin
-    }
-
     return (
         <React.Fragment>
             <Box
@@ -59,33 +55,24 @@ export default function FeaturesTabs() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    padding: "8rem",
+                    padding: { md: "8rem", xs: "2rem" },
                     flexDirection: "column",
                 }}
             >
-                <Typography
-                    sx={{
-                        fontSize: "3rem",
-                        lineHeight: "1",
-                        background:
-                            "linear-gradient(135deg,#f1f5f966 4.65%,#f1f5f9 51.22%,#f1f5f966 93.04%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                        backgroundSize: "100%",
-                        textAlign: "center",
-                        paddingBottom: "8rem",
-                    }}
+                <SectionHeader title="Features." />
+                <Grid
+                    container
+                    spacing={4}
+                    direction={{ xs: "column-reverse", md: "row" }}
                 >
-                    Features.
-                </Typography>
-                <Grid container spacing={4}>
                     <Grid item xs={12} md={9}>
                         <Box
                             sx={{
                                 background:
                                     "linear-gradient(0deg, #0f172a80, #0f172a80), linear-gradient(180deg, #33415580, #02042080 33.92%)",
                                 borderRadius: "15px",
-                                height: "70vh",
+                                height: { md: "70vh" },
+                                minHeight: { md: "590px" },
                                 //overflow: 'hidden',
                                 "&:hover": {
                                     background:
@@ -111,7 +98,7 @@ export default function FeaturesTabs() {
                         <Box
                             sx={{
                                 height: "225px",
-                                width: "225px",
+                                width: { md: "225px", xs: "100%" },
                                 background:
                                     "linear-gradient(0deg, #0f172a80, #0f172a80), linear-gradient(180deg, #33415580, #02042080 33.92%)",
                                 borderRadius: "15px",
