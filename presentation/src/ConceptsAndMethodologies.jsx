@@ -24,7 +24,7 @@ const ConceptsAndMethodologies = () => {
                 }}
             >
                 <Stack spacing={0}>
-                    <SectionHeader title="Concepts and Methodologies" />
+                    <SectionHeader title="Concepts & Methodologies." />
                     {/* <Stack
                         direction="row"
                         spacing={2}

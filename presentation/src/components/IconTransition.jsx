@@ -8,9 +8,8 @@ const IconTransition = ({ list, speed = 500 }) => {
     return (
         <Stack direction="row" spacing={2.5}>
             {imageList.map((image, index) => (
-                <Tooltip title={labeList[index]}>
+                <Tooltip key={index} title={labeList[index]}>
                     <img
-                        key={index}
                         height={window.innerWidth < 600 ? 32 : 48}
                         alt="icons"
                         src={image}
