@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aqariospresentation/static/css/main.483eedcb.css",
-    "main.js": "/aqariospresentation/static/js/main.4d741dff.js",
+    "main.js": "/aqariospresentation/static/js/main.dd38afe9.js",
     "static/media/Dashboard.png": "/aqariospresentation/static/media/Dashboard.5fb2a0c109f7cb1fc598.png",
     "static/media/Flags.png": "/aqariospresentation/static/media/Flags.d3a95e27a320b2bca39d.png",
     "static/media/Progress Tracker.png": "/aqariospresentation/static/media/Progress Tracker.c4299185cf80e9b75a0c.png",
@@ -15,10 +15,10 @@
     "static/media/React.png": "/aqariospresentation/static/media/React.98ff38735baa4c1b0381.png",
     "index.html": "/aqariospresentation/index.html",
     "main.483eedcb.css.map": "/aqariospresentation/static/css/main.483eedcb.css.map",
-    "main.4d741dff.js.map": "/aqariospresentation/static/js/main.4d741dff.js.map"
+    "main.dd38afe9.js.map": "/aqariospresentation/static/js/main.dd38afe9.js.map"
   },
   "entrypoints": [
     "static/css/main.483eedcb.css",
-    "static/js/main.4d741dff.js"
+    "static/js/main.dd38afe9.js"
   ]
 }
