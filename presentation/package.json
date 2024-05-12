@@ -1,7 +1,7 @@
 {
     "name": "presentation",
     "version": "0.1.0",
-    "homepage": "https://AbhitejVennapu.github.io/projectpresentation",
+    "homepage": "https://AbhitejVennapu.github.io/projectPresentation",
     "private": false,
     "dependencies": {
         "@emotion/react": "^11.11.4",
